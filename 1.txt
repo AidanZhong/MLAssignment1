@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 123
-=======
 test1hahah
 talkdw
 tewkteajakl
->>>>>>> ac62964ac2fb1bdd39d3f2a32de2133a2f1520a4
