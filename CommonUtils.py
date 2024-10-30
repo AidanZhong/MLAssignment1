@@ -18,7 +18,7 @@ def preprocess_data(data):
     return X, y
 
 
-def k_fold_cross_validation(gradient_descent, classify, learning_rate):
+def k_fold_cross_validation(weights, bias, gradient_descent, classify, learning_rate):
     # Apply preprocessing
     X, y = preprocess_data(data)
     # K-Fold cross-validation
@@ -31,10 +31,6 @@ def k_fold_cross_validation(gradient_descent, classify, learning_rate):
         # Split the data
         X_train, X_test = X.iloc[train_index].values, X.iloc[test_index].values
         y_train, y_test = y.iloc[train_index].values, y.iloc[test_index].values
-
-        # Initialize weights and bias for each fold
-        weights = np.random.rand(X_train.shape[1])
-        bias = 0
 
         # Train the model using gradient descent
         weights, bias = gradient_descent(X_train, y_train, weights, bias, learning_rate, epochs)
