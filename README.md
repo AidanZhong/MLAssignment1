@@ -3,6 +3,11 @@ Author:
 Aidan (Qinkun Zhong 20702503)
 Haoxiang Liang 20707416
 
+## dataset picking
+https://archive.ics.uci.edu/dataset/73/mushroom
+we got 23 value in a row, and 22 features, 1st is the target(is it eatable)
+
+
 
 
 
